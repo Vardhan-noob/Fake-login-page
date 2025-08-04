@@ -1,38 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SBI - Online Banking</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>MobileCart - Login to Access Deals</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .warning {
+            color: red;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="main-container">
-    <div class="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SBI-logo-blue.svg" alt="SBI Logo" class="logo">
-      <h1>State Bank of India</h1>
-      <h2>Online Banking - Retail Login</h2>
-    </div>
-    
     <div class="login-box">
-      <form method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter your username" required>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password" required>
-
-        <button type="submit">Login</button>
-      </form>
-
-      <div class="note">
-        <p><strong>⚠️ This is a phishing simulation site for internal testing only.</strong></p>
-        <p>Do NOT enter real credentials.</p>
-      </div>
+        <div class="logo">📱 MobileCart</div>
+        <h2>Login to Claim Your ₹4999 Smartphone</h2>
+        <form>
+            <input type="text" placeholder="Enter mobile/email" required><br>
+            <input type="password" placeholder="Enter password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <div class="warning">⚠️ This is a simulation site for internal testing only. Do NOT enter real details.</div>
     </div>
-    
-    <div class="footer">
-      <p>&copy; State Bank of India (Simulation)</p>
-    </div>
-  </div>
 </body>
 </html>
